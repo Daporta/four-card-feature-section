@@ -1,0 +1,110 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --veryDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --font: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--veryLightGray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-container h1 {
+  color: var(--veryDarkBlue);
+  font-weight: 200;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+
+.title-container p {
+  color: var(--grayishBlue);
+  font-size: 15px;
+  margin-top: -8px;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 25px;
+  grid-template-areas: 
+  ". . team team . ."
+  "supervisor supervisor team team calculator calculator"
+  "supervisor supervisor karma karma calculator calculator"
+  ". . karma karma . .";
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.grid p {
+  font-size: 15px;
+  color: var(--grayishBlue);
+  padding-left: 15px;
+  line-height: 2;
+  margin-top: -5px;
+}
+
+.grid h3 {
+  font-size: 19px;
+  color: var(--veryDarkBlue);
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+.team-card {
+  grid-area: team;
+  background-color: #fff;
+  border-top: 4px solid var(--red);
+  border-radius: 10px;
+  box-shadow: 6px 10px 22px 0px rgb(0 0 0 / 20%);
+  display: grid;
+}
+
+.supervisor-card {
+  grid-area: supervisor;
+  background-color: #fff;
+  border-top: 4px solid var(--cyan);
+  border-radius: 10px;
+  box-shadow: 6px 10px 22px 0px rgb(0 0 0 / 20%);
+  display: grid;
+}
+
+.calculator-card {
+  grid-area: calculator;
+  background-color: #fff;
+  border-top: 4px solid var(--blue);
+  border-radius: 10px;
+  box-shadow: 6px 10px 22px 0px rgb(0 0 0 / 20%);
+  display: grid;
+}
+
+.karma-card {
+  grid-area: karma;
+  background-color: #fff;
+  border-top: 4px solid var(--orange);
+  border-radius: 10px;
+  box-shadow: 6px 10px 22px 0px rgb(0 0 0 / 20%);
+  display: grid;
+}
+
+img {
+  justify-self: flex-end;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}

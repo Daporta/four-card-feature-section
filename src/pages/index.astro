@@ -1,0 +1,53 @@
+---
+import './index.css';
+import team from '../../images/icon-team-builder.svg';
+import supervisor from '../../images/icon-supervisor.svg';
+import calculator from '../../images/icon-calculator.svg';
+import karma from '../../images/icon-karma.svg';
+---
+<html lang="en">
+	<head>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+		</style>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Astro</title>
+	</head>
+	<body>
+		<section class="title-container">
+      <h1>Reliable, efficient delivery <br/>
+        <span>Powered by Technology</span>
+      </h1>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br/>
+        Quod at reprehenderit aut? Eius est ducimus.
+      </p>
+    </section>  
+    <section class="grid">
+      <div class="team-card">
+        <h3>Team Builder</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <img src={team} alt="">
+      </div>
+
+      <div class="supervisor-card">
+        <h3>Supervisor</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <img src={supervisor} alt="">
+      </div>
+
+      <div class="calculator-card">
+        <h3>Calculator</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <img src={calculator} alt="">
+      </div>
+
+      <div class="karma-card">
+        <h3>Karma</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <img src={karma} alt="">
+      </div>
+    </section>
+	</body>
+</html>
