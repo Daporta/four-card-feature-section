@@ -29,7 +29,7 @@ body {
 .title-container p {
   color: var(--grayishBlue);
   font-size: 15px;
-  margin-top: -8px;
+  margin-top: 40px;
 }
 
 h1 span {
@@ -49,13 +49,15 @@ h1 span {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  margin-top: 50px;
   text-align: left;
 }
 
 .grid p {
   font-size: 15px;
   color: var(--grayishBlue);
-  padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
   line-height: 2;
   margin-top: -5px;
 }
@@ -63,7 +65,8 @@ h1 span {
 .grid h3 {
   font-size: 19px;
   color: var(--veryDarkBlue);
-  padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-weight: 600;
 }
 
@@ -107,4 +110,23 @@ img {
   justify-self: flex-end;
   margin-right: 15px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 640px) {
+  .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      grid-gap: 25px;
+      grid-template-areas:
+        "team"
+        "supervisor"
+        "calculator"
+        "karma";
+      width: 500px;
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 50px;
+      text-align: left;
+    }
 }
